@@ -1,0 +1,6 @@
+# Obsidian vault state (per-machine, not shared)
+.obsidian/
+
+# OS junk
+.DS_Store
+Thumbs.db

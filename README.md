@@ -28,12 +28,13 @@ Lab นี้เริ่มจากการนำ PC ที่ไม่ได
 | [2026-11-1](Journal/2026-11-1-Proxmox.md) | ติดตั้ง Proxmox แทน Windows | ✅ สำเร็จ |
 | [2026-11-2](Journal/2026-11-2-Proxmox.md) | เพิ่ม NIC แล้ว Map เข้ากับ vmbr1 | ✅ สำเร็จ |
 | [2026-11-3](Journal/2026-11-3-OPNsense.md) | ติดตั้ง OPNsense และแยกฝั่ง LAN เป็น 192.168.2.0/24 | ✅ สำเร็จ |
+| [2026-11-5](Journal/2026-11-5-Hermes.md) | ลง Hermes Agent บน Proxmox (LXC + Docker) | ✅ สำเร็จ |
 
 ## 🌐 Topology
 
 <div align="center">
-  <img src="Diagrams/2026-11-3-Topology.png" alt="Topology ของ Homelab จาก Journal ตอน 2026-11-3" width="400">
-  <p><em>Topology จาก Journal ตอน 2026-11-3</em></p>
+  <img src="Diagrams/2026-11-5-Topology.png" alt="Topology ของ Homelab จาก Journal ตอน 2026-11-5" width="400">
+  <p><em>Topology จาก Journal ตอน 2026-11-5</em></p>
 </div>
 
 ### อุปกรณ์ในแผนภาพ
@@ -42,10 +43,13 @@ Lab นี้เริ่มจากการนำ PC ที่ไม่ได
 |---|---|---|
 | ISP Router | Gateway ออกอินเทอร์เน็ต (`192.168.1.1`) | Internet, PC 1 (`enp6s0`), Notebook (Wi-Fi) |
 | OPNsense (VM บน PC 1) | Firewall, NAT และ DHCP Server ของฝั่ง LAN (`192.168.2.1`) | WAN (`vtnet1`) ไป `vmbr1`, LAN (`vtnet0`) ไป `vmbr0` |
+| Hermes Agent (LXC บน PC 1) | Hermes Agent Server และ Dashboard (`192.168.2.20`) | `vmbr0` ฝั่ง LAN เดียวกับ OPNsense |
 | Managed Switch | เชื่อมอุปกรณ์ภายใน Lab (`192.168.2.2`) | PC 1 (`nic0`), PC 2, PC 3, Notebook |
 | PC 1 | Proxmox Host (`192.168.2.50`) | `nic0` ไป Switch, `enp6s0` ไป Router |
 | PC 2, PC 3 | เครื่อง Windows | `Nic0` ไป Switch |
 | Notebook | ใช้ควบคุมและจัดการ Lab | `Nic0` ไป Switch, Wi-Fi ไป Router |
+
+IP ของทุกอุปกรณ์ใน Lab ตั้งเป็น Static และอยู่นอกช่วง DHCP Pool (`192.168.2.100`–`192.168.2.200`) ที่ OPNsense แจก
 
 Topology ของช่วงอื่นดูได้ที่ [สารบัญ Diagrams](Diagrams/README.md)
 
@@ -54,6 +58,7 @@ Topology ของช่วงอื่นดูได้ที่ [สารบ
 - [x] ติดตั้ง Proxmox แทน Windows
 - [x] เชื่อมต่อ Proxmox Web UI
 - [x] เพิ่ม Firewall (OPNsense) เป็นตัวเชื่อม `vmbr0` และ `vmbr1`
+- [x] ติดตั้ง Hermes Agent บน Proxmox เป็น LXC และรันด้วย Docker
 
 ## 📂 โครงสร้าง Repository
 
