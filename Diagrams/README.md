@@ -6,7 +6,7 @@
 |---|---|---|---|
 | 2026-11-01 | [2026-11-1-Topology.drawio](2026-11-1-Topology.drawio) | [2026-11-1-Topology.png](2026-11-1-Topology.png) | ก่อนติดตั้ง Proxmox |
 | 2026-11-01 | [2026-11-1-Topology-After.drawio](2026-11-1-Topology-After.drawio) | [2026-11-1-Topology-After.png](2026-11-1-Topology-After.png) | หลังติดตั้ง Proxmox |
-| 2026-11-02 | [2026-11-2-Topology.drawio](2026-11-2-Topology.drawio) | [2026-11-2-Topology.png](2026-11-2-Topology.png) | Notebook เข้า Proxmox UI ไม่ได้ |
+| 2026-11-02 | [2026-11-2-Topology.drawio](2026-11-2-Topology.drawio) | [2026-11-2-Topology.png](2026-11-2-Topology.png) | Notebook เข้า Proxmox Web GUI ไม่ได้ |
 | 2026-11-02 | [2026-11-2-Topology-2.drawio](2026-11-2-Topology-2.drawio) | [2026-11-2-Topology-2.png](2026-11-2-Topology-2.png) | ต่อสายระหว่าง Router กับ Switch |
 | 2026-11-02 | [2026-11-2-Topology-3.drawio](2026-11-2-Topology-3.drawio) | [2026-11-2-Topology-3.png](2026-11-2-Topology-3.png) | ต่อ Notebook เข้า Switch |
 | 2026-11-02 | [2026-11-2-Topology-4.drawio](2026-11-2-Topology-4.drawio) | [2026-11-2-Topology-4.png](2026-11-2-Topology-4.png) | PC ที่มี 2 NIC ใช้ Static IP |

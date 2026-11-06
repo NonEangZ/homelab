@@ -41,13 +41,13 @@ Lab นี้เริ่มจากการนำ PC ที่ไม่ได
 
 | อุปกรณ์ | หน้าที่ | การเชื่อมต่อ |
 |---|---|---|
-| ISP Router | Gateway ออกอินเทอร์เน็ต (`192.168.1.1`) | Internet, PC 1 (`enp6s0`), Notebook (Wi-Fi) |
-| OPNsense (VM บน PC 1) | Firewall, NAT และ DHCP Server ของฝั่ง LAN (`192.168.2.1`) | WAN (`vtnet1`) ไป `vmbr1`, LAN (`vtnet0`) ไป `vmbr0` |
-| Hermes Agent (LXC บน PC 1) | Hermes Agent Server และ Dashboard (`192.168.2.20`) | `vmbr0` ฝั่ง LAN เดียวกับ OPNsense |
-| Managed Switch | เชื่อมอุปกรณ์ภายใน Lab (`192.168.2.2`) | PC 1 (`nic0`), PC 2, PC 3, Notebook |
-| PC 1 | Proxmox Host (`192.168.2.50`) | `nic0` ไป Switch, `enp6s0` ไป Router |
-| PC 2, PC 3 | เครื่อง Windows | `Nic0` ไป Switch |
-| Notebook | ใช้ควบคุมและจัดการ Lab | `Nic0` ไป Switch, Wi-Fi ไป Router |
+| ISP Router | Gateway ออกอินเทอร์เน็ต (`192.168.1.1`) | Internet, PC1 (`enp6s0`), Notebook (Wi-Fi) |
+| OPNsense (VM บน PC1) | Firewall, NAT และ DHCP Server ของฝั่ง LAN (`192.168.2.1`) | WAN (`vtnet1`) ไป `vmbr1`, LAN (`vtnet0`) ไป `vmbr0` |
+| Hermes Agent (LXC บน PC1) | Hermes Agent Server และ Dashboard (`192.168.2.20`) | `vmbr0` ฝั่ง LAN เดียวกับ OPNsense |
+| Managed Switch | เชื่อมอุปกรณ์ภายใน Lab (`192.168.2.2`) | PC1 (`nic0`), PC2, PC3, Notebook |
+| PC1 | Proxmox Host (`192.168.2.50`) | `nic0` ไป Switch, `enp6s0` ไป Router |
+| PC2, PC3 | เครื่อง Windows | `nic0` ไป Switch |
+| Notebook | ใช้ควบคุมและจัดการ Lab | `nic0` ไป Switch, Wi-Fi ไป Router |
 
 IP ของทุกอุปกรณ์ใน Lab ตั้งเป็น Static และอยู่นอกช่วง DHCP Pool (`192.168.2.100`–`192.168.2.200`) ที่ OPNsense แจก
 
@@ -56,7 +56,7 @@ Topology ของช่วงอื่นดูได้ที่ [สารบ
 ## 🗺️ Roadmap
 
 - [x] ติดตั้ง Proxmox แทน Windows
-- [x] เชื่อมต่อ Proxmox Web UI
+- [x] เชื่อมต่อ Proxmox Web GUI
 - [x] เพิ่ม Firewall (OPNsense) เป็นตัวเชื่อม `vmbr0` และ `vmbr1`
 - [x] ติดตั้ง Hermes Agent บน Proxmox เป็น LXC และรันด้วย Docker
 
