@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="หน้า-1" id="-lUZjYQhOF5MAHZ4SrhS">
-    <mxGraphModel dx="982" dy="540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="680" dy="374" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -125,7 +125,7 @@
         <mxCell id="NfZ-31CcMa011Zn6y4dG-5" edge="1" parent="1" source="NfZ-31CcMa011Zn6y4dG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.535;entryY=1.027;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="9lAcDSBXQpPCG-xiwb5W-77">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NfZ-31CcMa011Zn6y4dG-7" connectable="0" parent="NfZ-31CcMa011Zn6y4dG-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;b&gt;vmnet1 (WAN)&lt;/b&gt;" vertex="1">
+        <mxCell id="NfZ-31CcMa011Zn6y4dG-7" connectable="0" parent="NfZ-31CcMa011Zn6y4dG-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;b&gt;vtnet1 (WAN)&lt;/b&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.2189" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -133,7 +133,7 @@
         <mxCell id="NfZ-31CcMa011Zn6y4dG-6" edge="1" parent="1" source="NfZ-31CcMa011Zn6y4dG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.554;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="9lAcDSBXQpPCG-xiwb5W-76">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NfZ-31CcMa011Zn6y4dG-8" connectable="0" parent="NfZ-31CcMa011Zn6y4dG-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;b&gt;vmnet0 (LAN)&lt;/b&gt;" vertex="1">
+        <mxCell id="NfZ-31CcMa011Zn6y4dG-8" connectable="0" parent="NfZ-31CcMa011Zn6y4dG-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;b&gt;vtnet0 (LAN)&lt;/b&gt;" vertex="1">
           <mxGeometry relative="1" x="0.0506" y="-1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
